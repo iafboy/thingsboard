@@ -40,3 +40,10 @@ Collect and Visualize your IoT data in minutes by following this [guide](https:/
 ## Licenses
 
 This project is released under [Apache 2.0 License](./LICENSE).
+
+
+## Demo Account
+
+Systen Administrator: sysadmin@thingsboard.org / sysadmin
+Tenant Administrator: tenant@thingsboard.org / tenant
+Customer User: customer@thingsboard.org / customer
