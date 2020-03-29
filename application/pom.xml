@@ -41,6 +41,23 @@
     </properties>
 
     <dependencies>
+        <!--
+        add oracle db
+        -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>12.2.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/oracleLib/ojdbc8.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ucp</artifactId>
+            <version>12.2.0.1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/oracleLib/ucp.jar</systemPath>
+        </dependency>
         <dependency>
             <groupId>de.ruedigermoeller</groupId>
             <artifactId>fst</artifactId>
@@ -542,6 +559,7 @@
                         <logFilename>${pkg.name}.out</logFilename>
                         <initInfoProvides>${pkg.name}</initInfoProvides>
                     </embeddedLaunchScriptProperties>
+                    <includeSystemScope>true</includeSystemScope>
                 </configuration>
                 <executions>
                     <execution>
